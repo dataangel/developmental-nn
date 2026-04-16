@@ -11,6 +11,23 @@ This repository contains the **official implementation** of the paper:
 
 This code simulates cortical neurogenesis from a single stem cell using gene regulatory rules derived from mouse single-cell transcriptomic data. The developmental process generates a minimal 85-neuron circuit that achieves rapid learning on MNIST and CIFAR-10 **without any architectural modification**.
 
+## 🧬 Network Structure
+
+The pre-generated network (`grown_neural_network.json`) contains a developmentally generated topology with the following cellular composition:
+
+| Cell Type | Count | Proportion |
+| :--- | :--- | :--- |
+| Neuronal progenitor | 4,046 | 80.9% |
+| Oligodendrocyte progenitor | 431 | 8.6% |
+| Stem cell | 315 | 6.3% |
+| Undefined | 123 | 2.5% |
+| **Neuron (mature)** | **85** | **1.7%** |
+| **Total** | **5,000** | 100% |
+
+The 85 mature neurons form **200,400 synaptic connections** (average degree: 4,715).
+
+This structure emerges from a developmental simulation of cortical neurogenesis, as described in the paper.
+
 ## 📦 Repository Structure
 ```
 developmental-nn/
