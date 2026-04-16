@@ -31,9 +31,14 @@ This structure emerges from a developmental simulation of cortical neurogenesis,
 ## 📦 Repository Structure
 ```
 developmental-nn/
-├── structure.py # Developmental simulation (generates network topology)
 ├── train_mnist.py # Training script for MNIST
 ├── train_cifar10.py # Training script for CIFAR-10
 ├── requirements.txt # Python dependencies
 └── grown_neural_network.json # Pre-generated 85-neuron circuit (optional)
 ```
+## 📦 Quick Start
+
+1. Extract `grown_neural_network.zip`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Train on MNIST: `python train_mnist.py`
+4. Train on CIFAR-10: `python train_cifar10.py`
